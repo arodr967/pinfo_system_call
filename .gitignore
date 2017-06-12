@@ -1,7 +1,7 @@
-Makefile
 sched.h
 syscall_table.S
 syscalls.h
 task_struct.c
-/asm-i386
-/asm-x86_64
+asm-i386/
+asm-x86_64/
+/Makefile
