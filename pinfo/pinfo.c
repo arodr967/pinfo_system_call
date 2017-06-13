@@ -66,7 +66,7 @@ asmlinkage long sys_pinfo(struct pinfo *info) {
   kernel_pinfo->nr_threads = nr_threads;
 
   // Last element of children would make it the youngest child
-  youngest_child = list_entry(task->children.prev, struct task_struct, children);
+  youngest_child = list_entry(task->children.prev, struct task_struct, sibling);
   kernel_pinfo->youngest_child_pid = youngest_child->pid;
 
   // The first element on sibling, makes it the younger sibling
